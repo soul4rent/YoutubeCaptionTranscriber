@@ -1,0 +1,1083 @@
+1
+000:000:00,000 --> 000:000:09,690
+ all right that cool   slider so yeah my 
+
+2
+000:000:08,550 --> 000:000:13,349
+name  is   Christian   I'm   going to be 
+
+3
+000:000:09,690 --> 000:000:18,049
+talking  about the Nintendo   so I'm from 
+
+4
+000:000:13,349 --> 000:000:18,049
+Canada  from   Montreal thank you 
+
+5
+000:000:18,060 --> 000:000:23,279
+hello  livestream and I am a ruby 
+
+6
+000:000:21,270 --> 000:000:26,820
+ developer   so I build web apps full time 
+
+7
+000:000:23,279 --> 000:000:29,880
+but in  my   spare time I I   tend to hack on 
+
+8
+000:000:26,820 --> 000:000:33,090
+random stuff because my  brain does that 
+
+9
+000:000:29,880 --> 000:000:35,760
+ and for the past three months   there 
+
+10
+000:000:33,090 --> 000:000:38,190
+ random thing I was toying around with is 
+
+11
+000:000:35,760 --> 000:000:39,780
+the Nintendo it's not because I was
+
+12
+000:000:38,190 --> 000:000:41,969
+playing  in Nintendo it's because I want 
+
+13
+000:000:39,780 --> 000:000:44,129
+ to understand how   it worked so it all 
+
+14
+000:000:41,969 --> 000:000:47,700
+kind of started  I guess I was like 
+
+15
+000:000:44,129 --> 000:000:49,980
+ sleeping and for some reason I thought 
+
+16
+000:000:47,700 --> 000:000:52,770
+ about the Nintendo and I started asking 
+
+17
+000:000:49,980 --> 000:000:54,120
+myself how it worked  and at   first I just 
+
+18
+000:000:52,770 --> 000:000:55,620
+want to understand how like all the
+
+19
+000:000:54,120 --> 000:000:59,160
+ little parts work together to display 
+
+20
+000:000:55,620 --> 000:001:00,859
+pixels on a screen  but then I went down 
+
+21
+000:000:59,160 --> 000:001:03,390
+a  rabbit hole and I eventually want to 
+
+22
+000:001:00,859 --> 000:001:05,010
+display my own pixels on a screen  so 
+
+23
+000:001:03,390 --> 000:001:08,810
+here's sort of  like the three   three 
+
+24
+000:001:05,010 --> 000:001:12,180
+ month   journey that I'll take you on   so 
+
+25
+000:001:08,810 --> 000:001:13,950
+to answer my first question  this is what 
+
+26
+000:001:12,180 --> 000:001:16,619
+the inside  of Super Mario   Brothers looks 
+
+27
+000:001:13,950 --> 000:001:17,939
+like they're called  ROM boards they're 
+
+28
+000:001:16,619 --> 000:001:21,570
+called ROM boards  because it's basically 
+
+29
+000:001:17,939 --> 000:001:24,119
+just two ROM chips and a  ROM chip is a 
+
+30
+000:001:21,570 --> 000:001:26,369
+read-only memory  so the chip on the 
+
+31
+000:001:24,119 --> 000:001:28,500
+right is called  the program   ROM and this 
+
+32
+000:001:26,369 --> 000:001:30,829
+is basically  has like machine code this 
+
+33
+000:001:28,500 --> 000:001:33,150
+is actually like the code for Mario  and 
+
+34
+000:001:30,829 --> 000:001:35,549
+on the left side  you have the   character 
+
+35
+000:001:33,150 --> 000:001:38,579
+ ROM so character ROM is just graphics 
+
+36
+000:001:35,549 --> 000:001:40,680
+ for the for the game so the first first 
+
+37
+000:001:38,579 --> 000:001:44,220
+thing  I did   was   I I wrote a little 
+
+38
+000:001:40,680 --> 000:001:45,750
+program to extract the graphics from a
+
+39
+000:001:44,220 --> 000:001:47,700
+ROM file and it's actually a  really fun 
+
+40
+000:001:45,750 --> 000:001:50,670
+exercise  if you you want   to do it it's 
+
+41
+000:001:47,700 --> 000:001:52,680
+just  a very simple binary format and 
+
+42
+000:001:50,670 --> 000:001:56,340
+ it's really well documented it's really 
+
+43
+000:001:52,680 --> 000:001:57,930
+fun anyway  but not all the ROM boards 
+
+44
+000:001:56,340 --> 000:001:59,790
+look  like this so these are a bunch of 
+
+45
+000:001:57,930 --> 000:002:00,780
+different  ROM boards   so Nintendo when 
+
+46
+000:001:59,790 --> 000:002:03,090
+ they when they built the original 
+
+47
+000:002:00,780 --> 000:002:07,049
+ Nintendo they knew that technology would 
+
+48
+000:002:03,090 --> 000:002:08,550
+get better over time  so they   they made 
+
+49
+000:002:07,049 --> 000:002:11,280
+ it so that   the cartridges can take 
+
+50
+000:002:08,550 --> 000:002:13,370
+advantage of this this advancement  so I 
+
+51
+000:002:11,280 --> 000:002:16,340
+don't know if you're not
+
+52
+000:002:13,370 --> 000:002:19,040
+familiar with the Nintendo Nintendo
+
+53
+000:002:16,340 --> 000:002:21,200
+didn't have any storage so the way the
+
+54
+000:002:19,040 --> 000:002:22,550
+ way you would play a hard game is you'd 
+
+55
+000:002:21,200 --> 000:002:26,150
+either have  to leave your intended on 
+
+56
+000:002:22,550 --> 000:002:27,650
+ overnight for many days or then the game 
+
+57
+000:002:26,150 --> 000:002:31,549
+would provide you a way  to input   a 
+
+58
+000:002:27,650 --> 000:002:34,819
+password  yeah   the password a very long 
+
+59
+000:002:31,549 --> 000:002:38,330
+password for some  games   but then   Zelda 
+
+60
+000:002:34,819 --> 000:002:40,040
+came along and Zelda introduced  Zelda's 
+
+61
+000:002:38,330 --> 000:002:43,430
+cartridge had a battery  in   it and the 
+
+62
+000:002:40,040 --> 000:002:45,560
+battery  was powering   Ram just it's kind 
+
+63
+000:002:43,430 --> 000:002:48,440
+ of mind-blowing to me and this battery 
+
+64
+000:002:45,560 --> 000:002:49,940
+apparently  last   6 years   so if you still 
+
+65
+000:002:48,440 --> 000:002:51,470
+have  zelda today well apparently you can 
+
+66
+000:002:49,940 --> 000:002:54,739
+you could just switch  out the   battery   a 
+
+67
+000:002:51,470 --> 000:002:57,140
+really cool stuff  then I started going 
+
+68
+000:002:54,739 --> 000:002:59,180
+ down a rabbit hole so this is my first 
+
+69
+000:002:57,140 --> 000:003:01,160
+program  and   you might   look at this   and 
+
+70
+000:002:59,180 --> 000:003:04,010
+be  like wait   this is not a program it's 
+
+71
+000:003:01,160 --> 000:003:07,569
+a blank screen  like no it's not a blank 
+
+72
+000:003:04,010 --> 000:003:11,090
+screen it's a black screen  it actually I 
+
+73
+000:003:07,569 --> 000:003:13,150
+am proud of  that black screen because 
+
+74
+000:003:11,090 --> 000:003:15,860
+that black screen took me a long time
+
+75
+000:003:13,150 --> 000:003:18,290
+ I'm a ruby   developer I I work   with 
+
+76
+000:003:15,860 --> 000:003:19,880
+ high-level   languages I I am a 
+
+77
+000:003:18,290 --> 000:003:21,440
+self-taught developer I didn't go to
+
+78
+000:003:19,880 --> 000:003:25,340
+university  I never done assembly before 
+
+79
+000:003:21,440 --> 000:003:27,769
+ and yeah it took me a while to figure 
+
+80
+000:003:25,340 --> 000:003:30,530
+ out how to display black screen   had to 
+
+81
+000:003:27,769 --> 000:003:33,680
+read about  the NES which is so the NES 
+
+82
+000:003:30,530 --> 000:003:35,450
+was  released in 1985   so just finding the 
+
+83
+000:003:33,680 --> 000:003:38,120
+ information   about that was was kind of 
+
+84
+000:003:35,450 --> 000:003:40,609
+ tricky and then I had to find tools to 
+
+85
+000:003:38,120 --> 000:003:42,019
+write assembly for the  NES and   that was 
+
+86
+000:003:40,609 --> 000:003:45,380
+kind of tricky too anyway
+
+87
+000:003:42,019 --> 000:003:47,419
+fun times  so I was learning this with a 
+
+88
+000:003:45,380 --> 000:003:48,470
+friend and he was  kind of doing his own 
+
+89
+000:003:47,419 --> 000:003:52,310
+thing  on his side I was doing my own 
+
+90
+000:003:48,470 --> 000:003:56,060
+ thing this is kind of like oh   jeez this 
+
+91
+000:003:52,310 --> 000:003:59,060
+ is the wrong slide   doesn't   matter I was 
+
+92
+000:003:56,060 --> 000:004:00,919
+talking to my friend  and this okay 
+
+93
+000:003:59,060 --> 000:004:03,230
+spoiler alert  this was the next the next 
+
+94
+000:004:00,919 --> 000:004:05,540
+ kemal stone anyway I have a ball that's 
+
+95
+000:004:03,230 --> 000:004:06,470
+like on a screen and  I'm like oh my god 
+
+96
+000:004:05,540 --> 000:004:09,500
+it works
+
+97
+000:004:06,470 --> 000:004:11,720
+and he's like no  way oh my god and I'm 
+
+98
+000:004:09,500 --> 000:004:12,960
+like yeah oh my god and  then I was like 
+
+99
+000:004:11,720 --> 000:004:16,050
+wait  a minute   isn't 
+
+100
+000:004:12,960 --> 000:004:18,450
+ is it is it normal that we're getting 
+
+101
+000:004:16,050 --> 000:004:22,260
+excited  about displaying a ball yeah 
+
+102
+000:004:18,450 --> 000:004:26,070
+totally  so the way   so the   NES is powered 
+
+103
+000:004:22,260 --> 000:004:28,560
+by the 6502  CPU which is the same thing 
+
+104
+000:004:26,070 --> 000:004:31,500
+that  powers the   Apple   2 and other other 
+
+105
+000:004:28,560 --> 000:004:33,180
+retro consoles so it turns  out you can't 
+
+106
+000:004:31,500 --> 000:004:35,660
+ really use   high-level languages for   the 
+
+107
+000:004:33,180 --> 000:004:38,430
+for the CPU  because it's 2 megahertz 
+
+108
+000:004:35,660 --> 000:004:40,350
+ it'd be far too slow so instead you   got 
+
+109
+000:004:38,430 --> 000:004:43,260
+a  you're gonna speak its language you 
+
+110
+000:004:40,350 --> 000:004:44,430
+got to speak machine code to it  I don't 
+
+111
+000:004:43,260 --> 000:004:46,170
+know about you but  I   don't want to write 
+
+112
+000:004:44,430 --> 000:004:48,330
+ hex code all day like I'm used to having 
+
+113
+000:004:46,170 --> 000:004:51,090
+ like   a   high-level   language so this is 
+
+114
+000:004:48,330 --> 000:004:53,460
+where the CC 65  tool chain comes   into 
+
+115
+000:004:51,090 --> 000:004:55,830
+ play so this   is basically an assembler 
+
+116
+000:004:53,460 --> 000:004:58,710
+and  a linker and the linker will give 
+
+117
+000:004:55,830 --> 000:005:01,800
+you  any s   ROM files they can   then run on 
+
+118
+000:004:58,710 --> 000:005:03,240
+emulators  and this gives you this allows 
+
+119
+000:005:01,800 --> 000:005:06,720
+you  to write code 
+
+120
+000:005:03,240 --> 000:005:10,050
+I say code because well I mean it's
+
+121
+000:005:06,720 --> 000:005:11,730
+still super  low-level it's   not the code 
+
+122
+000:005:10,050 --> 000:005:13,020
+you'd expect for like it's  not a 
+
+123
+000:005:11,730 --> 000:005:14,940
+ high-level   language   or anything   so you 
+
+124
+000:005:13,020 --> 000:005:17,970
+can you can  read and write the memory 
+
+125
+000:005:14,940 --> 000:005:19,800
+you can add and subtract and  you could 
+
+126
+000:005:17,970 --> 000:005:21,600
+compare  numbers and then you could jump 
+
+127
+000:005:19,800 --> 000:005:23,880
+around  your code based on those 
+
+128
+000:005:21,600 --> 000:005:27,090
+ comparisons so it's very very limited 
+
+129
+000:005:23,880 --> 000:005:28,860
+ and what the CPU will do is it will 
+
+130
+000:005:27,090 --> 000:005:31,020
+ essentially   just go instruction by 
+
+131
+000:005:28,860 --> 000:005:33,480
+instruction it'll execute your code  and 
+
+132
+000:005:31,020 --> 000:005:36,180
+and that's that's  that's what you have 
+
+133
+000:005:33,480 --> 000:005:38,550
+ to build a game so yeah spoiler alert 
+
+134
+000:005:36,180 --> 000:005:40,950
+ showed you this earlier but this was my 
+
+135
+000:005:38,550 --> 000:005:45,650
+second milestone  I managed to display a 
+
+136
+000:005:40,950 --> 000:005:48,480
+ball  and it was awesome I was so happy 
+
+137
+000:005:45,650 --> 000:005:50,700
+ so what I had   to learn to display this 
+
+138
+000:005:48,480 --> 000:005:52,800
+ball is what what's called the picture
+
+139
+000:005:50,700 --> 000:005:55,170
+ processing unit   and this   is basically 
+
+140
+000:005:52,800 --> 000:005:57,720
+the graphics card for  Nintendo   it's 
+
+141
+000:005:55,170 --> 000:006:01,290
+capable  of displaying at 256 by 240 
+
+142
+000:005:57,720 --> 000:006:04,350
+pixel image of which  you lose around 
+
+143
+000:006:01,290 --> 000:006:07,860
+ five percent of the image because of the 
+
+144
+000:006:04,350 --> 000:006:10,770
+the  overscan   of the old CRT screens   you 
+
+145
+000:006:07,860 --> 000:006:13,290
+can't use RGB  I learned that   so you're 
+
+146
+000:006:10,770 --> 000:006:15,420
+actually  limited to a 54 color palette 
+
+147
+000:006:13,290 --> 000:006:17,600
+ and you can only use   25 colors at a time 
+
+148
+000:006:15,420 --> 000:006:19,680
+so super  limited 
+
+149
+000:006:17,600 --> 000:006:21,840
+ yen yes wasn't   powerful enough to 
+
+150
+000:006:19,680 --> 000:006:23,669
+ display to let you render one pixel   a 
+
+151
+000:006:21,840 --> 000:006:26,100
+time so instead  the screen is divided by 
+
+152
+000:006:23,669 --> 000:006:26,820
+into  8x8   tiles so you can actually 
+
+153
+000:006:26,100 --> 000:006:29,130
+ control 
+
+154
+000:006:26,820 --> 000:006:31,260
+ retile you have two layers you have   a 
+
+155
+000:006:29,130 --> 000:006:35,210
+ background later and a sprite layer and 
+
+156
+000:006:31,260 --> 000:006:38,070
+sprites are just  8x8 objects with an   XY 
+
+157
+000:006:35,210 --> 000:006:39,510
+ coordinates and it turns out to build 
+
+158
+000:006:38,070 --> 000:006:41,910
+ games all you have to do is right there 
+
+159
+000:006:39,510 --> 000:006:42,930
+to  the   right memory address just kind   of 
+
+160
+000:006:41,910 --> 000:006:44,610
+cool you  don't have function calls you 
+
+161
+000:006:42,930 --> 000:006:47,070
+ just   write to the right spot and that's 
+
+162
+000:006:44,610 --> 000:006:50,670
+ how you display stuff so milestone 
+
+163
+000:006:47,070 --> 000:006:53,370
+number  two we're   three sorry   the ball 
+
+164
+000:006:50,670 --> 000:006:56,400
+moves and it bounces off  edges   I was 
+
+165
+000:006:53,370 --> 000:006:58,440
+stoked  so here's my conversation my 
+
+166
+000:006:56,400 --> 000:007:00,810
+friend I'm like  sending the video and I 
+
+167
+000:006:58,440 --> 000:007:03,720
+wait he's like  oh my god wait is   that 
+
+168
+000:007:00,810 --> 000:007:08,090
+real  and   I was like yeah that's real 
+
+169
+000:007:03,720 --> 000:007:11,670
+ he's like no way I'm   like yeah it's real 
+
+170
+000:007:08,090 --> 000:007:12,900
+so the way what I have to do to  get this 
+
+171
+000:007:11,670 --> 000:007:15,300
+ working is I needed a way of knowing 
+
+172
+000:007:12,900 --> 000:007:18,240
+ when time passes   right so it turns out 
+
+173
+000:007:15,300 --> 000:007:20,220
+the  NES renders at 60 frames   per second 
+
+174
+000:007:18,240 --> 000:007:21,480
+ and between   each   frame you have what's 
+
+175
+000:007:20,220 --> 000:007:23,370
+ called a vertical blank and you have 
+
+176
+000:007:21,480 --> 000:007:24,990
+like a small  period of   time where   you 
+
+177
+000:007:23,370 --> 000:007:27,690
+can prepare the graphics  for a next 
+
+178
+000:007:24,990 --> 000:007:29,000
+frame  and this will trigger an interrupt 
+
+179
+000:007:27,690 --> 000:007:32,190
+so an interrupt is  just a way for 
+
+180
+000:007:29,000 --> 000:007:34,350
+ something to tell the CPU hey like stop 
+
+181
+000:007:32,190 --> 000:007:34,710
+and  go here   so   if I have this infinite 
+
+182
+000:007:34,350 --> 000:007:36,480
+ loop 
+
+183
+000:007:34,710 --> 000:007:39,480
+that's just incrementing numbers all the
+
+184
+000:007:36,480 --> 000:007:42,240
+ time and the nmi interrupts triggers 
+
+185
+000:007:39,480 --> 000:007:43,350
+well  it'll bring the   clip the program 
+
+186
+000:007:42,240 --> 000:007:44,790
+ counter to   the   interrupt and then I 
+
+187
+000:007:43,350 --> 000:007:47,160
+could do my stuff  and then I can return 
+
+188
+000:007:44,790 --> 000:007:55,410
+back  to wherever wherever I was before 
+
+189
+000:007:47,160 --> 000:007:58,470
+ the   interrupt so milestone before yes I 
+
+190
+000:007:55,410 --> 000:008:00,630
+learned  how to read controller inputs so 
+
+191
+000:007:58,470 --> 000:008:02,610
+it turns out controller inputs are just
+
+192
+000:008:00,630 --> 000:008:04,830
+a  special memory address that you   can 
+
+193
+000:008:02,610 --> 000:008:07,410
+read from  which is pretty awesome   and it 
+
+194
+000:008:04,830 --> 000:008:11,190
+turns out and then the  Nintendo only had 
+
+195
+000:008:07,410 --> 000:008:17,100
+eight possible buttons which fits really
+
+196
+000:008:11,190 --> 000:008:19,410
+well in a byte so it turns out when  you 
+
+197
+000:008:17,100 --> 000:008:21,450
+press a button  it just toggles a bit and 
+
+198
+000:008:19,410 --> 000:008:24,240
+if  you press two buttons   will toggle 
+
+199
+000:008:21,450 --> 000:008:26,700
+ both bits and so what you can do in 
+
+200
+000:008:24,240 --> 000:008:28,670
+assemblies you could read  the right 
+
+201
+000:008:26,700 --> 000:008:32,250
+memory location and  then   you could do 
+
+202
+000:008:28,670 --> 000:008:34,770
+ bitwise operators to like see if a 
+
+203
+000:008:32,250 --> 000:008:37,380
+buttons pressed or not  pretty cool 
+
+204
+000:008:34,770 --> 000:008:40,830
+milestone number five
+
+205
+000:008:37,380 --> 000:008:43,650
+ I'm playing against a robot   it's a very 
+
+206
+000:008:40,830 --> 000:008:46,890
+unfair robot because all the AI does  is 
+
+207
+000:008:43,650 --> 000:008:50,790
+set  the Y position of the paddle   to the 
+
+208
+000:008:46,890 --> 000:008:52,740
+Y  of the ball   so I can   never win   but at 
+
+209
+000:008:50,790 --> 000:008:54,840
+least I  can I can test my program and 
+
+210
+000:008:52,740 --> 000:008:58,860
+make sure you know the bounciness works
+
+211
+000:008:54,840 --> 000:009:00,870
+and all  that stuff tooling   turns out 
+
+212
+000:008:58,860 --> 000:009:04,860
+there's a popular emulator called
+
+213
+000:009:00,870 --> 000:009:08,100
+ FC u   X I don't know I don't know what 
+
+214
+000:009:04,860 --> 000:009:10,590
+that  means but it turns out the Windows 
+
+215
+000:009:08,100 --> 000:009:12,030
+version  of it has a debugger   I don't I 
+
+216
+000:009:10,590 --> 000:009:15,030
+don't  have Windows I run on Mac so I 
+
+217
+000:009:12,030 --> 000:009:16,890
+have to use wine  to to run this emulator 
+
+218
+000:009:15,030 --> 000:009:19,500
+this version  of the emulator and it 
+
+219
+000:009:16,890 --> 000:009:21,510
+gives you a really  cool debugger you 
+
+220
+000:009:19,500 --> 000:009:22,860
+ could set breakpoints you can watch the 
+
+221
+000:009:21,510 --> 000:009:24,240
+ memories   so if you see I don't know if 
+
+222
+000:009:22,860 --> 000:009:25,740
+it's  clear but you can see like the 
+
+223
+000:009:24,240 --> 000:009:26,940
+memory justice changing that's  because 
+
+224
+000:009:25,740 --> 000:009:28,530
+you're you know  the ball   is moving 
+
+225
+000:009:26,940 --> 000:009:30,510
+ around   and paddles are moving you can 
+
+226
+000:009:28,530 --> 000:009:32,070
+see all  this really helpful when you're 
+
+227
+000:009:30,510 --> 000:009:34,500
+working on  assembly code because   you 
+
+228
+000:009:32,070 --> 000:009:35,300
+can't do console.log or stuff  like that 
+
+229
+000:009:34,500 --> 000:009:40,740
+right
+
+230
+000:009:35,300 --> 000:009:43,430
+turns out  this emulator has support for 
+
+231
+000:009:40,740 --> 000:009:46,350
+Lua  so   Louis a scripting language   and 
+
+232
+000:009:43,430 --> 000:009:49,560
+you  can advance the frame you can read 
+
+233
+000:009:46,350 --> 000:009:54,300
+and  write to memory so   you can do cool 
+
+234
+000:009:49,560 --> 000:009:56,250
+ stuff like you can you can overlay stuff 
+
+235
+000:009:54,300 --> 000:010:00,350
+on top of the UI  to help you for 
+
+236
+000:009:56,250 --> 000:010:04,950
+ debugging but then I was like wait Lua 
+
+237
+000:010:00,350 --> 000:010:09,240
+can you do unit testing with Lua right
+
+238
+000:010:04,950 --> 000:010:11,400
+ so yeah   turns out you can so I wrote I 
+
+239
+000:010:09,240 --> 000:010:14,070
+wrote  some unit tests to make   sure my 
+
+240
+000:010:11,400 --> 000:010:16,140
+game works  and as I develop it   I can 
+
+241
+000:010:14,070 --> 000:010:25,530
+make  sure you know it I don't introduce 
+
+242
+000:010:16,140 --> 000:010:27,990
+any bugs  so yeah two tests yes   all   right 
+
+243
+000:010:25,530 --> 000:010:30,180
+so in terms of like resources there's
+
+244
+000:010:27,990 --> 000:010:32,730
+this really  great wiki called NES dev 
+
+245
+000:010:30,180 --> 000:010:37,020
+that  basically explains everything about 
+
+246
+000:010:32,730 --> 000:010:39,300
+ the Nintendo and I I found like learning 
+
+247
+000:010:37,020 --> 000:010:42,600
+assembly was really hard  to grasp at 
+
+248
+000:010:39,300 --> 000:010:44,010
+first  and it turns out the   Nintendo is 
+
+249
+000:010:42,600 --> 000:010:45,420
+really old and  Raziel a whole bunch of 
+
+250
+000:010:44,010 --> 000:010:48,360
+different emulators for  it and they're 
+
+251
+000:010:45,420 --> 000:010:50,750
+ all open source so I ended up   finding a 
+
+252
+000:010:48,360 --> 000:010:53,600
+go emulator  and whenever I had 
+
+253
+000:010:50,750 --> 000:010:55,420
+understanding how  the 6502 assembly 
+
+254
+000:010:53,600 --> 000:010:57,950
+worked well  I   just opened up the 
+
+255
+000:010:55,420 --> 000:011:01,660
+ emulator   coded and and figured it out 
+
+256
+000:010:57,950 --> 000:011:04,280
+ kind of read   it so next steps   well I 
+
+257
+000:011:01,660 --> 000:011:06,650
+want to you know just  improve the game 
+
+258
+000:011:04,280 --> 000:011:09,830
+have a  title screen   I eventually want   to 
+
+259
+000:011:06,650 --> 000:011:11,000
+put it on  an actual cartridge I don't 
+
+260
+000:011:09,830 --> 000:011:11,480
+know how to do that yet  but I'll figure 
+
+261
+000:011:11,000 --> 000:011:13,220
+it  out 
+
+262
+000:011:11,480 --> 000:011:15,860
+I want to  open-source   the game so that 
+
+263
+000:011:13,220 --> 000:011:20,200
+other  people that   want to learn assembly 
+
+264
+000:011:15,860 --> 000:011:22,880
+and 6502  can do it and I'm going   to be 
+
+265
+000:011:20,200 --> 000:011:25,340
+starting a  YouTube channel   and really 
+
+266
+000:011:22,880 --> 000:011:29,150
+going  in-depth into how I built this 
+
+267
+000:011:25,340 --> 000:011:31,220
+game really taking the viewers  hands and 
+
+268
+000:011:29,150 --> 000:011:33,470
+ going step by step on   how   to build a 
+
+269
+000:011:31,220 --> 000:011:36,010
+game like this  so my name   is Christian I 
+
+270
+000:011:33,470 --> 000:011:41,149
+hope you like to talk that  was it   thanks 
+
+271
+000:011:36,010 --> 000:011:41,149
+[Applause]
